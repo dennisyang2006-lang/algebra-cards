@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="把置換寫成互斥循環，再取長度的最小公倍數。">
+  <title>置換的階 | 抽象代數觀念卡</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <main class="sheet">
+    <nav aria-label="頁面導覽"><a href="../index.html">← 返回觀念卡目錄</a></nav>
+    <article>
+      <header class="masthead">
+        <p class="eyebrow">抽象代數觀念卡 · 置換群</p>
+        <h1>置換的階</h1>
+        <p class="subtitle" lang="en">Order of a Permutation</p>
+      </header>
+      <section class="note">
+        <h2>英文定義</h2>
+        <p lang="en">A permutation of a set X is a bijection from X to itself. Its order under composition is the least positive integer m for which its m-th power is the identity, if such an m exists.</p>
+      </section>
+      <section class="note">
+        <h2>中文解釋</h2>
+        <p>在有限集合上，先把置換拆成互不相交的循環。每個循環在指數為其長度的倍數時回到原位，因此置換的階是所有循環長度的最小公倍數。固定點的循環長度是 1。</p>
+      </section>
+      <section class="note">
+        <h2>算例</h2>
+        <div class="example"><p>在 S₇ 中，令 σ = (1 2 3 4)(5 6)，並讓 7 保持不動。長度分別是 4、2、1，所以 ord(σ) = lcm(4,2,1) = 4。</p></div>
+      </section>
+      <section class="note">
+        <h2>常見錯誤</h2>
+        <p class="mistake">把循環長度相乘。上例相乘會得到 8，但 4 次已經讓每個元素回到原位。若原來的循環有重疊，也要先化成互斥循環再取 lcm。</p>
+      </section>
+    </article>
+  </main>
+</body>
+</html>

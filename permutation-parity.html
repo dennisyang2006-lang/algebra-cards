@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="把循環拆成對換，判斷置換是否在 Aₙ。">
+  <title>置換的奇偶性 | 抽象代數觀念卡</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <main class="sheet">
+    <nav aria-label="頁面導覽"><a href="../index.html">← 返回觀念卡目錄</a></nav>
+    <article>
+      <header class="masthead">
+        <p class="eyebrow">抽象代數觀念卡 · 置換群</p>
+        <h1>置換的奇偶性</h1>
+        <p class="subtitle" lang="en">Parity of a Permutation</p>
+      </header>
+      <section class="note">
+        <h2>英文定義</h2>
+        <p lang="en">A transposition swaps two elements and fixes all others. A permutation is even if it is a product of an even number of transpositions, and odd if that number is odd. The parity does not depend on the chosen decomposition.</p>
+      </section>
+      <section class="note">
+        <h2>中文解釋</h2>
+        <p>r-cycle 可拆成 r − 1 個對換。Sₙ 是 n 個元素的所有置換所成的群，Aₙ 是其中所有偶置換所成的子群。</p>
+      </section>
+      <section class="note">
+        <h2>算例</h2>
+        <div class="example"><p>在 S₅ 中，σ = (1 2 3)(4 5)。按從右到左合成，(1 2 3) = (1 3)(1 2)，再加上 (4 5)，總共三個對換。因此 σ 是奇置換，不屬於 A₅。</p></div>
+      </section>
+      <section class="note">
+        <h2>常見錯誤</h2>
+        <p class="mistake">直接用循環長度的奇偶判斷。例如長度 3 的循環只需要兩個對換，所以是偶置換。</p>
+      </section>
+    </article>
+  </main>
+</body>
+</html>
