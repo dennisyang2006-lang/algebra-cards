@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="檢查雙射與運算保持，也複習如何排除同構。">
+  <title>群同構 | 抽象代數觀念卡</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <main class="sheet">
+    <nav aria-label="頁面導覽"><a href="../index.html">← 返回觀念卡目錄</a></nav>
+    <article>
+      <header class="masthead">
+        <p class="eyebrow">抽象代數觀念卡 · 群與同構</p>
+        <h1>群同構</h1>
+        <p class="subtitle" lang="en">Group Isomorphism</p>
+      </header>
+      <section class="note">
+        <h2>英文定義</h2>
+        <p lang="en">An isomorphism from a group (G, ∗) to a group (H, ·) is a bijection f : G → H such that f(a ∗ b) = f(a) · f(b) for all a, b ∈ G.</p>
+      </section>
+      <section class="note">
+        <h2>中文解釋</h2>
+        <p>證明同構時，要交代映射有定義、是雙射，而且保持運算。同構會保留元素的階，因為 f(aⁿ) = f(a)ⁿ，且只有單位元素會被送到單位元素。</p>
+      </section>
+      <section class="note">
+        <h2>算例</h2>
+        <div class="example"><p>考慮加法群 (ℤ,+) 和 (2ℤ,+)。令 f(n) = 2n。由 2m = 2n 可得 m = n，每個偶數也都能寫成 2n。再用 f(m + n) = 2m + 2n = f(m) + f(n)，即可得到同構。</p></div>
+      </section>
+      <section class="note">
+        <h2>常見錯誤</h2>
+        <p class="mistake">只看到兩群都有交換律就判定同構。例如 ℤ₂ 和 ℤ₃ 都是交換群，但大小不同，無法建立雙射。</p>
+      </section>
+    </article>
+  </main>
+</body>
+</html>

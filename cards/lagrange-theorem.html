@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="用陪集計數得到整除關係與元素階的限制。">
+  <title>Lagrange 定理 | 抽象代數觀念卡</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <main class="sheet">
+    <nav aria-label="頁面導覽"><a href="../index.html">← 返回觀念卡目錄</a></nav>
+    <article>
+      <header class="masthead">
+        <p class="eyebrow">抽象代數觀念卡 · 陪集與 Lagrange 定理</p>
+        <h1>Lagrange 定理</h1>
+        <p class="subtitle" lang="en">Lagrange’s Theorem</p>
+      </header>
+      <section class="note">
+        <h2>英文定義</h2>
+        <p lang="en">Let G be a finite group and H a subgroup of G. Lagrange’s theorem states that |G| = [G : H] · |H|, where [G : H] is the number of left cosets of H in G.</p>
+      </section>
+      <section class="note">
+        <h2>中文解釋</h2>
+        <p>左陪集把 G 分成互不重疊的等大部分，每部分都有 |H| 個元素。取 H = ⟨a⟩，便得到每個元素的階都整除 |G|。</p>
+      </section>
+      <section class="note">
+        <h2>算例</h2>
+        <div class="example"><p>在模 12 加法群 ℤ₁₂ 中，H = ⟨4⟩ = {0,4,8}。四個不同陪集可用 0、1、2、3 當代表，因此 [ℤ₁₂ : H] = 4，且 12 = 4 × 3。</p></div>
+      </section>
+      <section class="note">
+        <h2>常見錯誤</h2>
+        <p class="mistake">從 d 整除 |G| 推論 G 一定有階為 d 的元素。例如 Klein 四元群的階是 4，但所有非單位元素的階都是 2。</p>
+      </section>
+    </article>
+  </main>
+</body>
+</html>

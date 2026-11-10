@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="用旋轉與反射的關係化簡乘積。">
+  <title>二面體群 | 抽象代數觀念卡</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <main class="sheet">
+    <nav aria-label="頁面導覽"><a href="../index.html">← 返回觀念卡目錄</a></nav>
+    <article>
+      <header class="masthead">
+        <p class="eyebrow">抽象代數觀念卡 · 二面體群與四元數群</p>
+        <h1>二面體群</h1>
+        <p class="subtitle" lang="en">Dihedral Group</p>
+      </header>
+      <section class="note">
+        <h2>英文定義</h2>
+        <p lang="en">For n ≥ 3, the dihedral group of a regular n-gon is its group of rotations and reflections under composition.</p>
+      </section>
+      <section class="note">
+        <h2>中文解釋</h2>
+        <p>這裡用 Dₙ 表示正 n 邊形的對稱群，所以共有 2n 個元素。令 r 為轉一格的旋轉，s 為一個反射，則 rⁿ = e、s² = e、srs = r⁻¹。有些教材會用 D₂ₙ 表示同一個群。</p>
+      </section>
+      <section class="note">
+        <h2>算例</h2>
+        <div class="example"><p>在正方形的對稱群裡，r 是轉 90°，所以 r⁴ = e。由 sr = r⁻¹s 可得 sr = r³s，因此 (sr)² = (srs)r = r⁻¹r = e。</p></div>
+      </section>
+      <section class="note">
+        <h2>常見錯誤</h2>
+        <p class="mistake">把反射和旋轉任意交換。在正方形中，sr = r³s，而 r³ ≠ r，因此 sr ≠ rs。</p>
+      </section>
+    </article>
+  </main>
+</body>
+</html>

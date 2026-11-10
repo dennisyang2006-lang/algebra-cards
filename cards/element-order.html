@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="找第一次回到單位元素的指數，並計算次方的階。">
+  <title>元素的階 | 抽象代數觀念卡</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <main class="sheet">
+    <nav aria-label="頁面導覽"><a href="../index.html">← 返回觀念卡目錄</a></nav>
+    <article>
+      <header class="masthead">
+        <p class="eyebrow">抽象代數觀念卡 · 循環群與元素的階</p>
+        <h1>元素的階</h1>
+        <p class="subtitle" lang="en">Order of an Element</p>
+      </header>
+      <section class="note">
+        <h2>英文定義</h2>
+        <p lang="en">The order of an element a in a group G is the least positive integer n such that aⁿ = e. If no such n exists, a has infinite order.</p>
+      </section>
+      <section class="note">
+        <h2>中文解釋</h2>
+        <p>元素的階 ord(a) 等於 ⟨a⟩ 的元素個數。若 ord(a) = n &lt; ∞，則 ord(aᵏ) = n / gcd(n,k)。理由是 (aᵏ)ᵐ = e 等價於 n 整除 km。</p>
+      </section>
+      <section class="note">
+        <h2>算例</h2>
+        <div class="example"><p>在模 12 加法群 ℤ₁₂ 中，8 的連續倍數依序為 8、4、0，所以 ord(8) = 3。把 8 寫成 1 的 8 倍，也可用 12 / gcd(12,8) = 3 得到同一結果。</p></div>
+      </section>
+      <section class="note">
+        <h2>常見錯誤</h2>
+        <p class="mistake">找到某個指數使元素回到單位元素，就直接當作階。例子中 6 · 8 也等於 0，但階要取最小正整數 3。</p>
+      </section>
+    </article>
+  </main>
+</body>
+</html>
